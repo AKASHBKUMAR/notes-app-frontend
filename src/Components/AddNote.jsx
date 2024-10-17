@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import { AiOutlinePlus } from 'react-icons/ai'; // Importing plus icon from react-icons
 

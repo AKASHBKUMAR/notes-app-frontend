@@ -1,6 +1,4 @@
-// src/components/AddNoteModal.js
-
-import React, { useState } from 'react';
+import { useState } from 'react';
 import axios from 'axios';
 import { AiOutlineClose } from 'react-icons/ai'; // Close icon
 

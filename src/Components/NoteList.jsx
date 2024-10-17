@@ -1,4 +1,4 @@
-import { AiFillDelete } from 'react-icons/ai'; // Importing delete icon from react-icons
+import { AiFillDelete } from 'react-icons/ai'; 
 
 const NoteList = ({ notes, onDelete }) => {
     if (!notes || notes.length === 0) {
