@@ -16,7 +16,10 @@ const AddNoteModal = ({ isOpen, onClose, onAdd }) => {
             tags: tags.split(',').map(tag => tag.trim()), // Convert comma-separated tags to an array
             assignedDate 
         };
-        const res = await axios.post('http://localhost:5000/api/notes', newNote);
+        const res = await axios.post(
+          "https://notes-app-frontend-lilac.vercel.app/api/notes",
+          newNote
+        );
         onAdd(res.data); // Add the new note
         setTitle('');
         setContent('');

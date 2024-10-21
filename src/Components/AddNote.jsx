@@ -9,7 +9,10 @@ const AddNote = ({ onAdd }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const newNote = { title, content };
-        const res = await axios.post('http://localhost:5000/api/notes', newNote);
+        const res = await axios.post(
+          "https://notes-app-frontend-lilac.vercel.app/api/notes   ",
+          newNote
+        );
         onAdd(res.data);
         setTitle('');
         setContent('');
